@@ -1,0 +1,40 @@
+aerodromo_id,nombre,codigo_icao,codigo_iata,latitud,longitud,ciudad_id
+41,Aeropuerto Internacional de Icheon,PVOW,LMF,159.1,71.9,0
+21,Aeropuerto Internacional Toronto Pearson,IWJC,HKA,40.2,41.8,1
+55,Aeropuerto de Roma-Fiumicino,TBJM,SFF,157.2,26.7,2
+25,Aeropuerto Internacional Kingsford Smith,KMPW,HOX,22.5,59.4,3
+23,Aeropuerto Internacional de Melbourne,JKRA,HNB,19.5,53.9,4
+69,Aeropuerto Internacional Ataturk,XOEY,VNN,104.0,154.4,5
+43,Aeropuerto Internacional de Carrasco,PYIM,NVI,66.4,148.0,6
+75,Aeropuerto Big Apple,YHEP,YGY,43.0,118.1,7
+1,Aeropuerto Internacional Arturo Merino Benítez,BLFS,AWR,75.4,106.5,8
+15,Aeropuerto Internacional de San Francisco,GPRK,DUU,45.1,142.8,9
+77,Aeropuerto Internacional de Australia,ZGUA,ZLQ,27.3,111.1,3
+29,Aeropuerto de Adolfo Suárez Madrid-Barajas,MBOO,HSJ,54.2,174.5,10
+27,Aeropuerto Internacional de El Cairo,KZZS,HRV,103.8,107.6,11
+19,Aeropuerto de París-Charles de Gaulle,HGZT,HCM,147.2,49.6,12
+7,Aeropuerto Internacional de Galeão,EEGZ,BXS,6.8,90.3,13
+57,Aeropuerto de Milán-Malpensa,TCGF,SPT,70.1,56.3,14
+71,Aeropuerto Internacional de Nueva York,XSAM,WHO,89.8,171.2,7
+67,Aeropuerto de Ibiza,XEWM,VBH,156.8,54.8,15
+13,Aeropuerto Internacional de Miami,GAWW,CPH,96.1,8.4,16
+39,Aeropuerto Internacional de Haneda,PFXE,LCX,153.8,40.2,17
+31,Aeropuerto Josep Tarradellas Barcelona-El Prat,MVPW,JIZ,52.7,165.2,18
+17,Aeropuerto de la Ciudad de Londres,GSPA,EPM,152.5,76.9,19
+49,Aeropuerto Internacional El Alto,SGWN,QJM,173.5,5.6,20
+33,Aeropuerto Internacional de Pekín,NBMQ,JTM,133.5,57.9,21
+9,Aeropuerto Internacional O'Hare,FCJT,BYB,166.5,51.0,22
+73,Aeropuerto Internacional de Copiapo,XSZW,WKT,92.2,129.6,8
+35,Aeropuerto Internacional Pudong,NZTG,KFE,153.9,115.7,23
+45,Aeropuerto de Ámsterdam-Schiphol,RCQR,OHI,37.1,60.9,24
+63,Aeropuerto Internacional Indira Gandhi,URLQ,UAU,149.9,125.7,25
+47,Aeropuerto Internacional de Cancún,SDSC,PKS,103.3,99.4,26
+5,Aeropuerto Internacional de São Paulo-Guarulhos,DZFP,BKT,17.9,177.8,27
+51,Aeropuerto Internacional de la Ciudad del Cabo,SIMJ,RFP,47.4,157.1,28
+53,Aeropuerto Internacional Jorge Chávez,TAZY,RRK,62.2,148.1,29
+65,Aeropuerto Internacional de Maiquetía Simón Bolívar,VBIT,UYL,144.0,165.7,30
+3,Aeropuerto Internacional de Ezeiza,BVWK,BAH,14.7,51.2,31
+59,Aeropuerto de Hong Kong,TQQZ,TEF,142.6,4.1,32
+37,Aeropuerto Internacional Ben Gurión,NZTP,KZN,159.3,167.2,33
+61,Aeropuerto Internacional Eleftherios Venizelos,UQQX,TQV,72.4,102.6,34
+11,Aeropuerto Internacional John F. Kennedy,FOLH,CKR,18.1,123.4,7
