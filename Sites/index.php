@@ -8,6 +8,8 @@
 
   <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
 
+  <b>NUEVO</b>
+
   <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
@@ -22,6 +24,14 @@
   ?>
 
 <b>FUNCIONAL</b>
+
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Código</th>
+    </tr>
+</table> 
 
 <table>
     <tr>
