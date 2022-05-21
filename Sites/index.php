@@ -21,6 +21,8 @@
 	$companias_total = $result -> fetchAll();
   ?>
 
+<b>FUNCIONAL</b>
+
 <table>
     <tr>
       <th>ID</th>
@@ -36,6 +38,8 @@
       ?>
       
   </table>
+
+
 
   <br>
   <br>
