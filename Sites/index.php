@@ -40,7 +40,7 @@ tienen como destino el aeródromo.</h3>
     Aerolínea:
     <select name="nombre_compania">
       <?php
-        foreach ($nombres_companias as $p) {echo <option value=$p[0]>$p[0]</option>;}
+        foreach ($nombres_companias as $p) {echo "<option value=$p[0]>$p[0]</option>";}
       ?>
     </select>
     <br/><br/>
