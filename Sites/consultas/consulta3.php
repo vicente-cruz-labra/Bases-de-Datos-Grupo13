@@ -12,8 +12,8 @@
     $query = "SELECT reservapasajero.*
     FROM reservapasajero, reserva, vueloespecifico, costoticket
     WHERE reserva.reserva_id = reservapasajero.reserva_id AND 
-    reserva.codigo_reserva = '$c' AND 
-    reserva.vuelo_id = vueloespecifico.vuelo_id";
+    reserva.codigo_reserva = 'LAT5532-4263' AND 
+    reserva.vuelo_id = vueloespecifico.vuelo_id;";
 
     #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
     $result = $db -> prepare($query);
