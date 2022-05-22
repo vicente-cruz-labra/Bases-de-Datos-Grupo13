@@ -9,14 +9,11 @@
     $c= $_POST["codigo_reserva"];
 
     #Se construye la consulta como un string
-    $query = "SELECT reserva.reserva_id, reserva.codigo_reserva, reservapasajero.ticket_id,
-    reservapasajero.cliente_id, costoticket.costo
+    $query = "SELECT reservapasajero.*
     FROM reservapasajero, reserva, vueloespecifico, costoticket
     WHERE reserva.reserva_id = reservapasajero.reserva_id AND 
-    reserva.reserva_id = '$c' AND 
-    reserva.vuelo_id = vueloespecifico.vuelo_id AND 
-    vueloespecifico.ruta_id = costoticket.ruta_id AND 
-    vueloespecifico.aeronave_id = costoticket.aeronave_id;";
+    reserva.codigo_reserva = '$c' AND 
+    reserva.vuelo_id = vueloespecifico.vuelo_id";
 
     #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
     $result = $db -> prepare($query);
@@ -27,15 +24,13 @@
 <table>
     <tr>
     <th>RESERVA ID</th>
-    <th>CÓDIGO RESERVA</th>
-    <th>TICKET ID</th>
     <th>CLIENTE ID</th>
-    <th>COSTO</th>
+    <th>TICKET ID</th>
     </tr>
     
     <?php
         foreach ($resultado_consulta3 as $p) {
-        echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td></tr>";
+        echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td></tr>";
     }
     ?>
         
