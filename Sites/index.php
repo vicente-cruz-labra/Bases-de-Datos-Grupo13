@@ -8,7 +8,9 @@
 
   <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
 
-  <b>NUEVO</b>
+  <form action="consultas/constulta1.php" method="get">
+    <input type="submit" value="Buscar">
+  </form>
 
   <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
@@ -30,8 +32,7 @@
 	$resultado_consulta1 = $result -> fetchAll();
   ?>
 
-<table>
-<table>
+  <table>
     <tr>
       <th>VUELO ID</th>
       <th>RUTA ID</th>
@@ -43,7 +44,7 @@
       <th>ALTITUD</th>
       <th>ESTADO</th>
     </tr>
-</table> 
+
   
       <?php
         // echo $companias_total;
