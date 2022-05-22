@@ -16,7 +16,9 @@
   vuelogenerico.compania_id = compania.compania_id AND 
   vueloespecifico.estado = 'aceptado' AND
   compania.nombre_compania = '$a' AND
-  vuelogenerico.aerodromo_llegada_id = '$c';";
+  vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id
+  aerodromo.codigo_icao = '$c'
+  ;";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
