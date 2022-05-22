@@ -11,7 +11,7 @@
 
   #Se construye la consulta como un string
  	$query = "SELECT *
-  FROM vueloespecifico, vuelogenerico, compania 
+  FROM vueloespecifico, vuelogenerico, compania, aerodromo
   WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
   vuelogenerico.compania_id = compania.compania_id AND 
   vueloespecifico.estado = 'aceptado' AND
