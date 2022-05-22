@@ -58,6 +58,7 @@ junto a sus pasajeros y costos</h3>
     Código reserva:
     <input type="text" name="codigo_reserva">
     <br/>
+    <input type="submit" value="Buscar">
   </form>
 
   <br>
