@@ -10,7 +10,7 @@
   $a = $_POST["nombre_compania"];
 
   #Se construye la consulta como un string
- 	$query = "SELECT *
+ 	$query = "SELECT vueloespecifico.*, aerodromo.codigo_icao
   FROM vueloespecifico, vuelogenerico, compania, aerodromo
   WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
   vuelogenerico.compania_id = compania.compania_id AND 
@@ -35,12 +35,13 @@
   <th>VELOCIDAD</th>
   <th>ALTITUD</th>
   <th>ESTADO</th>
+  <th>CÓDIGO ICAO</th>
   </tr>
   
   <?php
     foreach ($resultado_consulta2 as $p) {
     echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td>
-    <td>$p[5]</td><td>$p[6]</td><td>$p[7]</td><td>$p[8]</td></tr>";
+    <td>$p[5]</td><td>$p[6]</td><td>$p[7]</td><td>$p[8]</td><td>$p[9]</td></tr>";
   }
   ?>
       
