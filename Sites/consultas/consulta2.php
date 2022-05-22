@@ -15,7 +15,7 @@
   WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
   vuelogenerico.compania_id = compania.compania_id AND 
   vueloespecifico.estado = 'aceptado' AND
-  compania.nombre_compania = $a
+  compania.nombre_compania = '%$a%'
   );";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
