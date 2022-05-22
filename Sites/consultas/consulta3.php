@@ -13,7 +13,7 @@
     reservapasajero.cliente_id, costoticket.costo
     FROM reservapasajero, reserva, vueloespecifico, costoticket
     WHERE reserva.reserva_id = reservapasajero.reserva_id AND 
-    reserva.codigo_reserva = '$c' AND 
+    reserva.reserva_id = '$c' AND 
     reserva.vuelo_id = vueloespecifico.vuelo_id AND 
     vueloespecifico.ruta_id = costoticket.ruta_id AND 
     vueloespecifico.aeronave_id = costoticket.aeronave_id;";
