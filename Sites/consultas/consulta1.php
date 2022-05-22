@@ -1,7 +1,7 @@
 <?php include('../templates/header.html');   ?>
 
 <body>
-    <?php
+<?php
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
 
@@ -19,30 +19,29 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $resultado_consulta1 = $result -> fetchAll();
-    ?>
+?>
 
-    <table>
-        <tr>
-        <th>VUELO ID</th>
-        <th>RUTA ID</th>
-        <th>CÓDIGO VUELO</th>
-        <th>AERONAVE ID</th>
-        <th>FECHA SALIDA</th>
-        <th>FECHA LLEGADA</th>
-        <th>VELOCIDAD</th>
-        <th>ALTITUD</th>
-        <th>ESTADO</th>
-        </tr>
+<table>
+    <tr>
+    <th>VUELO ID</th>
+    <th>RUTA ID</th>
+    <th>CÓDIGO VUELO</th>
+    <th>AERONAVE ID</th>
+    <th>FECHA SALIDA</th>
+    <th>FECHA LLEGADA</th>
+    <th>VELOCIDAD</th>
+    <th>ALTITUD</th>
+    <th>ESTADO</th>
+</tr>
 
     
-        <?php
-            // echo $companias_total;
-            foreach ($resultado_consulta1 as $p) {
-            echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td>
-            <td>$p[5]</td><td>$p[6]</td><td>$p[7]</td><td>$p[8]</td></tr>";
-        }
-        ?>
+<?php
+    foreach ($resultado_consulta1 as $p) {
+    echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td>
+    <td>$p[5]</td><td>$p[6]</td><td>$p[7]</td><td>$p[8]</td></tr>";
+}
+?>
         
-    </table>
+</table>
 
 <?php include('../templates/footer.html'); ?>

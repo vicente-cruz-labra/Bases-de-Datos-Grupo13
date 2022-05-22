@@ -6,33 +6,52 @@
   require("../config/conexion.php");
 
   #Se obtiene el valor del input del usuario
-  $codigo_icao = $_POST["codigo_icao"];
-  $nombre_compania = $_POST["nombre_compania"];
-  #$codigo = intval($altura);
+  $c= $_POST["codigo_icao"];
+  $a = $_POST["nombre_compania"];
 
   #Se construye la consulta como un string
- 	$query = "SELECT * FROM compania;";
+ 	$query = "SELECT *
+   FROM vueloespecifico, vuelogenerico, compania, aeronave, costoticket
+   WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
+   vueloespecifico.aeronave_id = aeronave.aeronave_id AND 
+   vueloespecifico.ruta_id = costoticket.ruta_id AND 
+   vuelogenerico.compania_id = compania.compania_id AND 
+   costoticket.aeronave_id = aeronave.aeronave_id AND 
+   vueloespecifico.estado = 'aceptado' AND
+   compania.compania_nombre = $a AND
+   vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id AND
+   aerodromo.aerodromo_id IN (
+           SELECT aerodromo_id
+           FROM aerodromo
+           WHERE aerodromo.codigo_icao = $c
+      );";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
 	$result -> execute();
-	$companias_total = $result -> fetchAll();
-  ?>
+	$resultado_consulta2 = $result -> fetchAll();
+?>
 
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Nombre</th>
-      <th>Código</th>
-    </tr>
+<table>
+  <tr>
+  <th>VUELO ID</th>
+  <th>RUTA ID</th>
+  <th>CÓDIGO VUELO</th>
+  <th>AERONAVE ID</th>
+  <th>FECHA SALIDA</th>
+  <th>FECHA LLEGADA</th>
+  <th>VELOCIDAD</th>
+  <th>ALTITUD</th>
+  <th>ESTADO</th>
+  </tr>
   
-      <?php
-        // echo $companias_total;
-        foreach ($companias_total as $p) {
-          echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td></tr>";
-      }
-      ?>
+  <?php
+    foreach ($resultado_consulta2 as $p) {
+    echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td>
+    <td>$p[5]</td><td>$p[6]</td><td>$p[7]</td><td>$p[8]</td></tr>";
+  }
+  ?>
       
-  </table>
+</table>
 
 <?php include('../templates/footer.html'); ?>
