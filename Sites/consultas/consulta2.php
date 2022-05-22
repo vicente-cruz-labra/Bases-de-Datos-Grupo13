@@ -16,7 +16,7 @@
   vuelogenerico.compania_id = compania.compania_id AND 
   vueloespecifico.estado = 'aceptado' AND
   compania.nombre_compania = '$a' AND
-  vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id
+  vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id AND
   aerodromo.codigo_icao = '$c'
   ;";
 
