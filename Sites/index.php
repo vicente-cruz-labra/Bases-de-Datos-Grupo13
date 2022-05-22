@@ -57,7 +57,7 @@ junto a sus pasajeros y costos</h3>
   <form align="center" action="consultas/consulta3.php" method="post">
     Código reserva:
     <input type="text" name="codigo_reserva">
-    <br/>
+    <br/><br/>
     <input type="submit" value="Buscar">
   </form>
 
