@@ -11,16 +11,13 @@
 
   #Se construye la consulta como un string
  	$query = "SELECT *
-   FROM vueloespecifico, vuelogenerico, compania, aeronave, costoticket
-   WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
-   vueloespecifico.aeronave_id = aeronave.aeronave_id AND 
-   vueloespecifico.ruta_id = costoticket.ruta_id AND 
-   vuelogenerico.compania_id = compania.compania_id AND 
-   costoticket.aeronave_id = aeronave.aeronave_id AND 
-   vueloespecifico.estado = 'aceptado' AND
-   compania.compania_nombre = 'IBERIA' AND
-   vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id AND
-   aerodromo.aerodromo_id = 'EEGZ'
+  FROM vueloespecifico, vuelogenerico, compania 
+  WHERE vueloespecifico.codigo_vuelo = vuelogenerico.codigo_vuelo AND 
+  vuelogenerico.compania_id = compania.compania_id AND 
+  vueloespecifico.estado = 'aceptado' AND
+  compania.nombre_compania = 'IBERIA' AND
+  vuelogenerico.aerodromo_llegada_id = aerodromo.aerodromo_id AND
+  aerodromo.aerodromo_id = 'EEGZ'
   );";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
