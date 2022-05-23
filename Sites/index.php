@@ -91,7 +91,7 @@ uno de los estados</h3>
     $nombres_companias = $result -> fetchAll();
     ?>
 
-  <form align="center" action="consultas/consulta2.php" method="post">
+  <form align="center" action="consultas/consulta5.php" method="post">
     Aerolínea:
     <select name="nombre_compania">
       <?php
