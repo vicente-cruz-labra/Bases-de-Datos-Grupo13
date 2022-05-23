@@ -28,13 +28,15 @@
 <table>
     <tr>
     <th>RESERVA ID</th>
-    <th>CLIENTE ID</th>
+    <th>CÓDIGO RESERVA</th>
     <th>TICKET ID</th>
+    <th>CLIENTE ID</th>
+    <th>COSTO ID</th>
     </tr>
     
     <?php
         foreach ($resultado_consulta3 as $p) {
-        echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td></tr>";
+        echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td><td>$p[4]</td></tr>";
     }
     ?>
         
