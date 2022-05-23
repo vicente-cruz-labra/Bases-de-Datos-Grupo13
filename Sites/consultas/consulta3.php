@@ -31,7 +31,7 @@
     <th>CÓDIGO RESERVA</th>
     <th>TICKET ID</th>
     <th>CLIENTE ID</th>
-    <th>COSTO ID</th>
+    <th>COSTO</th>
     </tr>
     
     <?php
