@@ -4,15 +4,15 @@
 
   <h1 align="center">Biblioteca Vuelos </h1>
   
-  <p style="text-align:center;">Aquí podrás encontrar información sobre vuelos.</p>
-
   <br>
 
+  <p>
   <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
 
   <form action="consultas/consulta1.php" method="get">
     <input type="submit" value="Buscar">
   </form>
+  </p>
 
   <br>
   <br>
