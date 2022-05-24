@@ -9,7 +9,7 @@
     $c= $_POST["codigo_reserva"];
 
     #Se construye la consulta como un string
-    $query = "SELECT ticket.numero_ticket, cliente.nombre_cliente, cliente.pasaporte_cliente, cliente.nacionalidad_cliente, cliente.fecha_nacimiento_cliente,
+    $query = "SELECT  ticket.numero_ticket, cliente.nombre_cliente, cliente.pasaporte_cliente, cliente.nacionalidad_cliente, cliente.fecha_nacimiento_cliente,
     ticket.numero_asiento, ticket.clase, ticket.comida_y_maleta, costoticket.costo
     FROM reservapasajero, reserva, vueloespecifico, costoticket, cliente, ticket
     WHERE reserva.reserva_id = reservapasajero.reserva_id AND 
@@ -29,8 +29,11 @@
 
 <table>
     <tr>
+    <th>NUMERO TICKET</th>
     <th>CLIENTE</th>
-    <th>TICKET ID</th>
+    <th>PASAPORTE CLIENTE</th>
+    <th>NACIONALIDAD</th>
+    <th>FECHA DE NACIMIENTO</th>
     <th>ASIENTO</th>
     <th>CLASE</th>
     <th>COMIDA Y MALETA</th>
