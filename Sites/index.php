@@ -19,8 +19,7 @@
   <br>
 
   <div>
-  <h3 align="center"> Vuelos aceptados por cierta aerolínea que
-tienen como destino el aeródromo</h3>
+  <h3 align="center"> Vuelos aceptados de aerolíneas que tienen como destino el aeródromo</h3>
 
     <?php
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
@@ -37,9 +36,11 @@ tienen como destino el aeródromo</h3>
 
   <form align="center" action="consultas/consulta2.php" method="post">
     Código ICAO:
+    <br/>
     <input type="text" name="codigo_icao">
     <br/>
     Aerolínea:
+    <br/>
     <select name="nombre_compania">
       <?php
         foreach ($nombres_companias as $p) {echo "<option value=$p[0]>$p[0]</option>";}

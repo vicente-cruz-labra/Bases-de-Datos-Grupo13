@@ -50,11 +50,11 @@ body {
     background-size: cover;
 }
 
-table.center {
+table {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
-    width: 100%;
+    width: 95%;
     text-align: center;
     font-size: 20px
 }
@@ -85,4 +85,8 @@ div {
     padding: 40px;
     width: 75%;
     margin: auto;
+}
+
+td {
+    color: white;
 }
