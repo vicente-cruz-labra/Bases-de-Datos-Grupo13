@@ -84,7 +84,7 @@
   <br>
 
   <div>
-  <h3 align="center"> Cantidad de vuelos que tienen en cada uno de los estados la aerolínea </h3>
+  <h3 align="center"> Cantidad de vuelos que tiene en cada uno de los estados la aerolínea </h3>
 
   <form align="center" action="consultas/consulta5.php" method="post">
     Aerolínea:

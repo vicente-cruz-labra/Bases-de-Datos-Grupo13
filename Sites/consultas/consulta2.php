@@ -2,50 +2,6 @@
 
 <body>
 
-<style type="text/css">
-#BarraHTML {
-background-color: #000;
-    padding: 1px;
-    position: fixed;
-    width: 100%;
-z-index: 10000;
-}
-#BarraHTML ul{
-   list-style-type: none;
-    
-   
-}
-#BarraHTML li{
-   display: inline;
-   text-align: center;
-   margin: 0 0 0 0;
-}
-#BarraHTML li a {
-   padding: 2px 7px 2px 7px;
-   text-decoration: none;
-}
-#BarraHTML li a:hover{
-   background-color: #333333;
-   color: #ffffff;
-}
-#texto{
-padding: 60px 0 0 0;
-}
-   </style>
-</head>
-
-<body>
-
-<div id="BarraHTML">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Trabajos</a></li>
-<li><a href="#">Contacto</a></li>
-<li><a href="#">Blog</a></li>
-</ul>
-</div>
-
-
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
