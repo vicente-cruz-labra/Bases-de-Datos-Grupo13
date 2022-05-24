@@ -2,59 +2,19 @@
 
 <body>
 
-<style type="text/css">
-#BarraHTML {
-background-color: #000;
-    padding: 1px;
-    position: fixed;
-    width: 100%;
-z-index: 10000;
-}
-#BarraHTML ul{
-   list-style-type: none;
-    
-   
-}
-#BarraHTML li{
-   display: inline;
-   text-align: center;
-   margin: 0 0 0 0;
-}
-#BarraHTML li a {
-   padding: 2px 7px 2px 7px;
-   text-decoration: none;
-}
-#BarraHTML li a:hover{
-   background-color: #333333;
-   color: #ffffff;
-}
-#texto{
-padding: 60px 0 0 0;
-}
-   </style>
-</head>
-
-<body>
-
-<div id="BarraHTML">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Trabajos</a></li>
-<li><a href="#">Contacto</a></li>
-<li><a href="#">Blog</a></li>
-</ul>
-</div>
-
-  <h1 align="center">Biblioteca Vuelos </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre vuelos.</p>
+  <div class="text-center p-3 mb-2 bg-dark text-white">
+        <h1>Entrega 2</h1>
+  </div>
 
   <br>
 
-  <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
+  <div align='center' style="display: flex; flex-flow: wrap;">
+    <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
 
-  <form action="consultas/consulta1.php" method="get">
-    <input type="submit" value="Buscar">
-  </form>
+    <form action="consultas/consulta1.php" method="get">
+      <input type="submit" value="Buscar">
+    </form>
+  </div>
 
   <br>
   <br>
