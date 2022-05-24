@@ -78,3 +78,8 @@ p {
     width: 75%;
 }
 
+div {
+    border: black;
+    background-color: rgba(175, 170, 170, 0.75);
+    padding: 40px;
+}
