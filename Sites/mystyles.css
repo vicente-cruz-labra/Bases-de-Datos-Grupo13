@@ -81,7 +81,8 @@ p {
 
 div {
     border: black;
-    background-color: rgba(175, 170, 170, 0.75);
+    background-color: rgba(200, 190, 190, 0.5);
     padding: 40px;
     width: 75%;
+    align-self: center;
 }
