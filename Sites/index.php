@@ -3,18 +3,20 @@
 <body>
 
   <div class="text-center p-3 mb-2 bg-dark text-white">
-        <h1>Entrega 2</h1>
+    <h1>Entrega 2</h1>
   </div>
+
+  <h1 align="center">Biblioteca Vuelos </h1>
+  
+  <p style="text-align:center;">Aquí podrás encontrar información sobre vuelos.</p>
 
   <br>
 
-  <div align='center' style="display: flex; flex-flow: wrap;">
-    <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
+  <h3 align="center"> 1. Muestre todos los vuelos pendientes de ser aprobados por la DGAC</h3>
 
-    <form action="consultas/consulta1.php" method="get">
-      <input type="submit" value="Buscar">
-    </form>
-  </div>
+  <form action="consultas/consulta1.php" method="get">
+    <input type="submit" value="Buscar">
+  </form>
 
   <br>
   <br>

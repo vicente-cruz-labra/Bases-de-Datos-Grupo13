@@ -27,7 +27,9 @@ button {
 }
 
 h1 {
-    color: green;
+    border: black;
+    background-color: black;
+    color: white;
 }
 
 h1,
@@ -41,6 +43,7 @@ body {
     width: 100%;
     font-size: 20px;
     text-align: center;
+    background-image: url('https://fondosmil.com/fondo/31175.jpg');
 }
 
 table.center {
@@ -64,3 +67,10 @@ tr:hover {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+p {
+    border: black;
+    background-color: rgba(175, 170, 170, 0.75);
+    padding: 40px;
+}
+
