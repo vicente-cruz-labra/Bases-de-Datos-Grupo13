@@ -47,6 +47,7 @@ body {
     text-align: center;
     background-image: url('https://fondosmil.com/fondo/31175.jpg');
     background-attachment: fixed;
+    background-size: cover;
 }
 
 table.center {
@@ -82,4 +83,5 @@ div {
     border: black;
     background-color: rgba(175, 170, 170, 0.75);
     padding: 40px;
+    width: 75%;
 }

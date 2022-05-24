@@ -18,8 +18,8 @@
   <br>
   <br>
 
-  <h3 align="center"> 2. Vuelos aceptados por cierta aerolínea que
-tienen como destino el aeródromo del código</h3>
+  <h3 align="center"> Vuelos aceptados por cierta aerolínea que
+tienen como destino el aeródromo</h3>
 
     <?php
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
@@ -52,8 +52,7 @@ tienen como destino el aeródromo del código</h3>
   <br>
   <br>
 
-  <h3 align="center"> 3. Tickets asociados al código, 
-junto a sus pasajeros y costos</h3>
+  <h3 align="center"> Tickets asociados al código, junto a sus pasajeros y costos</h3>
 
   <form align="center" action="consultas/consulta3.php" method="post">
     Código reserva:
@@ -66,7 +65,7 @@ junto a sus pasajeros y costos</h3>
   <br>
   <br>
 
-  <h3 align="center"> 4. Por cada aerolinea, el cliente que ha comprado la mayor cantidad de tickets</h3>
+  <h3 align="center"> Por cada aerolinea, el cliente que ha comprado la mayor cantidad de tickets</h3>
 
   <form action="consultas/consulta4.php" method="get">
     <input type="submit" value="Buscar">
@@ -76,8 +75,7 @@ junto a sus pasajeros y costos</h3>
   <br>
   <br>
 
-  <h3 align="center"> 5. Cantidad de vuelos que tienen en cada
-uno de los estados la aerolínea ingresada</h3>
+  <h3 align="center"> Cantidad de vuelos que tienen en cada uno de los estados la aerolínea </h3>
 
   <form align="center" action="consultas/consulta5.php" method="post">
     Aerolínea:
@@ -90,7 +88,7 @@ uno de los estados la aerolínea ingresada</h3>
   <br>
   <br>
 
-  <h3 align="center"> 6. Aerolínea que tiene el mayor porcentaje de vuelos aceptados</h3>
+  <h3 align="center"> Aerolínea que tiene el mayor porcentaje de vuelos aceptados</h3>
 
   <form action="consultas/consulta6.php" method="get">
     <input type="submit" value="Buscar">
