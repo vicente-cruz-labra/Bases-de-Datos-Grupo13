@@ -1,5 +1,9 @@
 <?php include('templates/header.html');   ?>
 
+<head>
+<link rel="stylesheet" href="styles/mystyles.css">
+</head>
+
 <body>
 
   <h1 align="center">Biblioteca Vuelos </h1>
