@@ -2,10 +2,6 @@
 
 <body>
 
-  <div class="text-center p-3 mb-2 bg-dark text-white">
-    <h1>Entrega 2</h1>
-  </div>
-
   <h1 align="center">Biblioteca Vuelos </h1>
   
   <p style="text-align:center;">Aquí podrás encontrar información sobre vuelos.</p>
