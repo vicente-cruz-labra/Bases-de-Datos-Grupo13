@@ -1,10 +1,82 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title> Grupo 13 </title>
-    <!-- Bootstrap(CSS), Jquery (javascripts), etc... -->
+    <style>
+      input {
+    width: 10%;
+    height: 20px;
+}
 
-    <!-- para que sea index.php pueda importarlo -->
-    <link rel="stylesheet" href="styles/mystyles.css">
+input[type=text] {
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 10em;
+    height: 2em;
+    font-size: 25px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px;
+    size: 30px;
+}
+
+h1 {
+    border: black;
+    background-color: black;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    background-image: url('https://fondosmil.com/fondo/31175.jpg');
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    font-size: 20px
+}
+
+th {
+    background-color: #1c27b8;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+p {
+    border: black;
+    background-color: rgba(175, 170, 170, 0.75);
+    padding: 40px;
+}
+
+
+    </style>
 </head>
 
 <body>
