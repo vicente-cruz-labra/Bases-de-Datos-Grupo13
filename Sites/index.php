@@ -6,13 +6,13 @@
   
   <br>
 
-  <p>
+  <div>
   <h3 align="center"> Vuelos pendientes de ser aprobados por la DGAC</h3>
 
   <form action="consultas/consulta1.php" method="get">
     <input type="submit" value="Buscar">
   </form>
-  </p>
+  </div>
 
   <br>
   <br>
