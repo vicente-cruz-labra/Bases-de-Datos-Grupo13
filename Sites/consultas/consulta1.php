@@ -22,13 +22,13 @@
 ?>
 
 <table>
-    <tr>
+<tr>
     <th>VUELO ID</th>
-    <th>RUTA ID</th>
     <th>CÓDIGO VUELO</th>
-    <th>AERONAVE ID</th>
+    <th>RUTA ID</th>
     <th>FECHA SALIDA</th>
     <th>FECHA LLEGADA</th>
+    <th>AERONAVE ID</th>
     <th>VELOCIDAD</th>
     <th>ALTITUD</th>
     <th>ESTADO</th>
