@@ -38,7 +38,7 @@
     Código ICAO:
     <br/>
     <input type="text" name="codigo_icao">
-    <br/>
+    <br/><br/>
     Aerolínea:
     <br/>
     <select name="nombre_compania">
@@ -60,6 +60,7 @@
 
   <form align="center" action="consultas/consulta3.php" method="post">
     Código reserva:
+    <br/>
     <input type="text" name="codigo_reserva">
     <br/><br/>
     <input type="submit" value="Buscar">
@@ -87,6 +88,7 @@
 
   <form align="center" action="consultas/consulta5.php" method="post">
     Aerolínea:
+    <br/>
     <input type="text" name="nombre_compania">
     <br/><br/>
     <input type="submit" value="Buscar">

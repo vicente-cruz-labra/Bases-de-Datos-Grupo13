@@ -88,5 +88,10 @@ div {
 }
 
 td {
-    color: white;
+    color: black;
+}
+
+select {
+    align-items: center;
+    font-size: 15px;
 }
