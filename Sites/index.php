@@ -1,7 +1,10 @@
-<?php include('templates/header.html');   ?>
-
 <head>
-<link rel="stylesheet" href="styles/mystyles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> Grupo 13 </title>
+    <!-- Bootstrap(CSS), Jquery (javascripts), etc... -->
+
+    <!-- para que sea index.php pueda importarlo -->
+    <link rel="stylesheet" href="styles/mystyles.css">
 </head>
 
 <body>
